@@ -1,0 +1,225 @@
+/*-----------------------------------全局----------------------------------------*/
+body,
+h1,
+h2,
+h3,
+i,
+em,
+ul,
+li,
+a,
+p,
+img,
+dl,
+dt,
+dd,
+input,
+td,
+tr,
+th,
+tr,
+td,
+table,
+tbody,
+thead {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "微软雅黑";
+}
+button:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+i,
+em,
+a {
+  font-style: normal;
+  line-height: 1;
+}
+ul,
+dl,
+dd,
+dt,
+input,
+button {
+  display: block;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+/**/
+html {
+  font-size: 50px;
+}
+body {
+  font-size: 0.28rem;
+  background: #f0efed;
+  color: #333;
+}
+/*icon字体*/
+.iconfont {
+  color: #fff;
+}
+/*-----------------------------------自适应----------------------------------------*/
+/*media根据屏幕大小加载不同的样式 max-width:小于,min-width:大于*/
+@media (max-width: 767px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 60px;
+  }
+}
+/*-----------------------------------头部----------------------------------------*/
+header {
+  width: 100%;
+  height: 1.5rem;
+  box-shadow: 0 5px 15px 0px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: skyblue;
+}
+header img {
+  display: inline-block;
+  width: 1rem;
+  margin: 0 .15rem;
+}
+header div {
+  display: inline-block;
+}
+header div h1 {
+  font-size: .5rem;
+}
+header div i {
+  font-size: .3rem;
+}
+/*-----------------------------------中间----------------------------------------*/
+.service {
+  margin: .5rem 0;
+  padding: .05rem .5rem .5rem;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 5px 15px 0px black;
+}
+.service i {
+  display: block;
+  margin-top: .5rem;
+  border: 1px solid skyblue;
+  border-right: 0;
+  border-top: 0;
+  padding: .05rem;
+  width: 2rem;
+  font-size: .3rem;
+  background-image: -webkit-linear-gradient(45deg, skyblue 0%, #fff 70%);
+  background-image: linear-gradient(45deg, skyblue 0%, #fff 70%);
+}
+.service-work {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  margin-top: .2rem;
+}
+.service-work li {
+  font-size: .3rem;
+  font-weight: bold;
+  line-height: .8rem;
+  text-align: center;
+  height: .8rem;
+  border-radius: .05rem;
+  background-image: -webkit-linear-gradient(45deg, #787e8a 0%, #eee 50%, #787e8a 100%);
+  background-image: linear-gradient(45deg, #787e8a 0%, #eee 50%, #787e8a 100%);
+}
+.service-pro {
+  margin-top: .2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.service-pro li {
+  margin-top: .1rem;
+  box-sizing: border-box;
+  width: 32%;
+  height: 3rem;
+  border: 1px solid #222;
+  padding: .1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover!important;
+}
+.service-pro li:nth-child(1) {
+  background: url(../img/pro_01.jpg);
+}
+.service-pro li:nth-child(2) {
+  background: url(../img/pro_02.jpg);
+}
+.service-pro li:nth-child(3) {
+  background: url(../img/pro_03.jpg);
+}
+.service-pro li:nth-child(4) {
+  background: url(../img/pro_04.jpg);
+}
+.service-pro li:nth-child(5) {
+  background: url(../img/pro_05.jpg);
+}
+.service-pro li:nth-child(6) {
+  background: url(../img/pro_06.jpg);
+}
+.service-pro li:hover {
+  cursor: pointer;
+}
+.service-picShow {
+  width: 0;
+  height: 0;
+  background: red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+}
+/*-----------------------------------尾部----------------------------------------*/
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  background: #9cc289;
+  box-shadow: 0 5px 15px 0px black;
+  padding: .2rem;
+}
+footer p {
+  color: #fff;
+  font-size: .3rem;
+}
